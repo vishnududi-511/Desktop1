@@ -256,8 +256,6 @@ header {
     width: 100%;
 }
 
-
-
 h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 45px;
@@ -440,6 +438,15 @@ b {
     color: #2B353EB2;
 }
 
+.posi-fix {
+    position: fixed;
+    z-index: 1;
+}
+
+.w-100 {
+    width: 100%;
+}
+
 @media (max-width:1200px) {
 
     .cafe-img {
@@ -521,6 +528,7 @@ b {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        z-index: 2;
     }
 
     label[for="menubar"] {
@@ -529,9 +537,9 @@ b {
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
-        z-index: 1;
-        /* position: fixed;
-        right: 2%; */
+        z-index: 3;
+        position: fixed;
+        right: 2%;
     }
 
     .menu-color {
@@ -545,9 +553,9 @@ b {
         left: 0;
     }
 
-    /* .navbar {
+    .navbar {
         position: fixed;
-    } */
+    }
 
     .col-6-md {
         width: 50%;
